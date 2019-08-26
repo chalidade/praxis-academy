@@ -1,0 +1,8 @@
+GRUB UBUNTU
+1. Ubuntu, with linux 2.11.0-18-generic
+2. Ubuntu, with Linux 2.11.0-18-generic (recovery Mode)
+3. Previous Linux version
+4. Memory Test (memtest86+)
+5. Memory test (memtest86+, serial console 115200)
+6. Windows Recovery Environment (loader) (on /dev/sda1)
+Windows 7 (loader) (on /dev/sda2)

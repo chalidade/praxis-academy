@@ -1,0 +1,148 @@
+1. Listing File (ls)
+If you want to see the list of files on your UNIX or Linux system, use the 'ls' command.
+
+ChalidAdeRahman:~ macbook$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		GNS3			Pictures
+Desktop			Library			Public
+Documents		Movies			VirtualBox VMs
+
+Note:
+Directories are denoted in blue color.
+Files are denoted in white.
+You will find similar color schemes in different flavors of Linux.
+
+
+2. Remove File (rm)
+This command if you want delete file using terminal
+
+ChalidAdeRahman:~ macbook$ ls
+AndroidStudioProjects	Downloads		Pictures
+Applications		GNS3			Public
+Chalid			Library			VirtualBox VMs
+Desktop			Movies
+Documents		Music
+ChalidAdeRahman:~ macbook$ rm Chalid
+ChalidAdeRahman:~ macbook$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		GNS3			Pictures
+Desktop			Library			Public
+Documents		Movies			VirtualBox VMs
+
+3. Moving and Renaming File / Folder
+If you wanna moving or renaming file using command "mv"
+
+a. Moving File
+ChalidAdeRahman:~ macbook$ mkdir Chalid
+ChalidAdeRahman:~ macbook$ ls
+AndroidStudioProjects	Downloads		Pictures
+Applications		GNS3			Public
+Chalid			Library			VirtualBox VMs
+Desktop			Movies
+Documents		Music
+ChalidAdeRahman:~ macbook$ mv Chalid/ Documents/
+ChalidAdeRahman:~ macbook$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		GNS3			Pictures
+Desktop			Library			Public
+Documents		Movies			VirtualBox VMs
+ChalidAdeRahman:~ macbook$ cd Documents/
+ChalidAdeRahman:Documents macbook$ ls
+3 Agustus 2019
+Aplikasi
+Ar-Rahman.mp4
+Backup Handycam
+Chalid
+
+b. Renaming File
+ChalidAdeRahman:~ macbook$ ls
+AndroidStudioProjects	Downloads		Pictures
+Applications		GNS3			Public
+Chalid			Library			VirtualBox VMs
+Desktop			Movies
+Documents		Music
+ChalidAdeRahman:~ macbook$ mv Chalid/ Lina
+ChalidAdeRahman:~ macbook$ ls
+AndroidStudioProjects	GNS3			Pictures
+Applications		Library			Public
+Desktop			Lina			VirtualBox VMs
+Documents		Movies
+Downloads		Music
+
+4. Make Directory (mkdir)
+If you wanna make folder we can use this "mkdir" command
+
+ChalidAdeRahman:~ macbook$ ls
+AndroidStudioProjects	GNS3			Pictures
+Applications		Library			Public
+Desktop			Lina			VirtualBox VMs
+Documents		Movies
+Downloads		Music
+ChalidAdeRahman:~ macbook$ mkdir Chalid
+ChalidAdeRahman:~ macbook$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		GNS3			Pictures
+Chalid			Library			Public
+Desktop			Lina			VirtualBox VMs
+Documents		Movies
+
+5. Delete Folder (rmdir)
+If we want to delete folder, we use rmdir
+
+ChalidAdeRahman:~ macbook$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		GNS3			Pictures
+Chalid			Library			Public
+Desktop			Lina			VirtualBox VMs
+Documents		Movies
+ChalidAdeRahman:~ macbook$ rmdir Chalid/
+ChalidAdeRahman:~ macbook$ ls
+AndroidStudioProjects	GNS3			Pictures
+Applications		Library			Public
+Desktop			Lina			VirtualBox VMs
+Documents		Movies
+Downloads		Music
+
+6. Show Manual Command with (man)
+Man stands for manual which is a reference book of a Linux operating system. It is similar to HELP file found in popular software.
+
+man(1)                                                                  man(1)
+
+NAME
+       man - format and display the on-line manual pages
+
+SYNOPSIS
+       man  [-acdfFhkKtwW]  [--path]  [-m system] [-p string] [-C config_file]
+       [-M pathlist] [-P pager] [-B browser] [-H htmlpager] [-S  section_list]
+       [section] name ...
+
+
+7. History Command with (history)
+If we want to check user history Command
+
+ChalidAdeRahman:~ macbook$ history
+    1  sudo su
+    2  ls
+    3  cd /home/
+    4  ls
+    5  cd ..
+    6  ls
+    7  cd ..
+    8  ls
+    9  sudo su
+   10  sudo su
+   11  cd /Applications/XAMPP/htdocs/mpdf/
+   12  ls
+
+8. Clear Terminal (clear)
+if we want to clear our terminal using command (clear)
+
+ChalidAdeRahman:~ macbook$
+
+
+9. Dividing data into columns (pr)
+We want its content to be arranged in three columns. The syntax for the same would be:
+
+pr -x Filename
+
+The '-x' option with the 'pr' command divides the data into x columns.
